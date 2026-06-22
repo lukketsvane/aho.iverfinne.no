@@ -10,6 +10,7 @@ const NAV = [
   { href: '/personer', label: 'Personar' },
   { href: '/bygg', label: 'Bygg' },
   { href: '/kart', label: 'Kart' },
+  { href: '/lyd', label: 'Lyd' },
   { href: '/om', label: 'Om AHO' },
 ];
 
