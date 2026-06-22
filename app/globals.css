@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* ── AHO 80 år — designsystem ─────────────────────────────────────────────
+   Profilfargen er AHO si vermillion-oransje (#ED4723), henta frå
+   logopakken i NTB-mediebanken. Papirtone og serif-display gjev ei roleg,
+   redaksjonell arkivkjensle. */
+@theme inline {
+  --color-paper: #f5f3ef;
+  --color-paper-2: #efece6;
+  --color-card: #fbfaf8;
+  --color-ink: #1a1a1a;
+  --color-ink-soft: #4a4744;
+  --color-muted: #8a857e;
+  --color-line: #ddd8d0;
+  --color-aho: #ed4723;
+  --color-aho-ink: #c63d1f;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-newsreader), ui-serif, Georgia, "Times New Roman", serif;
+  --font-mono: var(--font-mono-jb), ui-monospace, "SFMono-Regular", monospace;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+/* Tynn, sperra versal-etikett som går att i heile appen */
+.eyebrow {
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+}
+
+/* Skjul scrollbar (filmstrip / horisontale spor) */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+::selection {
+  background: var(--color-aho);
+  color: #fff;
+}
