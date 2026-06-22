@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import type { Milestone } from '@/lib/timeline';
 
 type Motif = Milestone['motif'];
@@ -133,6 +134,32 @@ export function ArchivePhoto({
       {caption && (
         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/55 to-transparent px-3 pb-2 pt-6">
           <span className="font-mono text-[9px] uppercase tracking-wider text-white/85">{caption}</span>
+        </div>
+      )}
+    </div>
+  );
+}
+
+/* Ekte, rettsklart arkivfoto (frå Notion «AHO bilete»). */
+export function ArchiveImage({
+  src,
+  alt,
+  credit,
+  className = '',
+  rounded = 'rounded-xl',
+}: {
+  src: string;
+  alt: string;
+  credit?: string;
+  className?: string;
+  rounded?: string;
+}) {
+  return (
+    <div className={`relative overflow-hidden ${rounded} bg-paper-2 ring-1 ring-black/10 ${className}`}>
+      <Image src={src} alt={alt} fill sizes="(max-width: 640px) 100vw, 560px" className="object-cover" />
+      {credit && (
+        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent px-3 pb-2 pt-7">
+          <span className="font-mono text-[9px] uppercase tracking-wider text-white/90">{credit}</span>
         </div>
       )}
     </div>
