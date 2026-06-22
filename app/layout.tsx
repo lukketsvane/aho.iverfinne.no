@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import { Inter, Newsreader, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
+import { TabBar } from '@/components/TabBar';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
 const newsreader = Newsreader({
@@ -43,8 +44,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${inter.variable} ${newsreader.variable} ${mono.variable}`}
       suppressHydrationWarning
     >
-      <body className="font-sans antialiased bg-paper text-ink" suppressHydrationWarning>
+      <body className="font-sans antialiased bg-paper text-ink pb-16 md:pb-0" suppressHydrationWarning>
         {children}
+        <TabBar />
       </body>
     </html>
   );

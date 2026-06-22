@@ -42,7 +42,7 @@ export default async function MilestonePage({ params }: { params: Promise<{ id: 
           <Eyebrow accent>80 år</Eyebrow>
           <span className="h-px w-8 bg-aho" />
         </div>
-        <Link href="/#tidslinje" className="inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider text-muted transition-colors hover:text-aho">
+        <Link href="/tidslinje" className="inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider text-muted transition-colors hover:text-aho">
           <ArrowLeft className="h-3.5 w-3.5" /> Til tidslinja
         </Link>
       </div>
