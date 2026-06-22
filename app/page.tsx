@@ -1,85 +1,82 @@
 import Link from 'next/link';
-import { Search, ArrowDown, LayoutGrid } from 'lucide-react';
+import { ArrowRight, ArrowDown } from 'lucide-react';
 import { MILESTONES } from '@/lib/timeline';
-import { Timeline } from '@/components/Timeline';
-import { ArkivSok } from '@/components/ArkivSok';
-import { Logo, Eyebrow } from '@/components/ui';
+import { BILETE } from '@/lib/bilete';
+import { SiteHeader } from '@/components/SiteHeader';
+import { ArchiveImage } from '@/components/ArchivePhoto';
+import { Logo } from '@/components/ui';
+
+const KORT = [
+  { n: '01', href: '/tidslinje', title: 'Tidslinje', blurb: 'Utforsk dei viktige milepælane i AHO si historie, 1945–2025.' },
+  { n: '02', href: '/bygg', title: 'Bygg', blurb: 'Frå Kunstindustriskulen til Maridalsveien 29 ved Akerselva.' },
+  { n: '03', href: '/kart', title: 'Kart', blurb: 'Stadene AHO har halde til, frå St. Olavs gate til i dag.' },
+];
 
 export default function Home() {
-  return (
-    <main className="min-h-screen bg-paper">
-      {/* header */}
-      <header className="sticky top-0 z-40 border-b border-line/60 bg-paper/85 backdrop-blur-md">
-        <div className="mx-auto flex max-w-[560px] items-center justify-between px-5 py-3.5">
-          <Link href="/" aria-label="AHO — heim">
-            <Logo className="h-6" />
-          </Link>
-          <nav className="flex items-center gap-1.5">
-            <Link
-              href="/skisser"
-              className="hidden items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium text-ink-soft transition-colors hover:bg-paper-2 sm:inline-flex"
-            >
-              <LayoutGrid className="h-4 w-4" /> Skisser
-            </Link>
-            <a href="#arkivsok" aria-label="Søk" className="rounded-full p-2 text-ink-soft transition-colors hover:bg-paper-2">
-              <Search className="h-5 w-5" />
-            </a>
-          </nav>
-        </div>
-      </header>
+  const campus = BILETE.find((b) => b.slug.includes('campus')) ?? BILETE[BILETE.length - 1];
 
-      {/* hero */}
-      <section className="mx-auto max-w-[560px] px-5 pt-12 pb-2">
-        <div className="flex items-center gap-3">
-          <Eyebrow accent className="text-[0.7rem]">80 år</Eyebrow>
-          <span className="h-px w-10 bg-aho" />
-        </div>
-        <h1 className="mt-5 font-serif text-[2.7rem] font-medium leading-[1.04] tracking-[-0.015em] text-ink sm:text-[3.4rem]">
-          Ved sida av jubileet: ei tidslinje for AHO
-        </h1>
-        <div className="mt-7 mb-1 h-px w-7 bg-ink/40" />
-        <p className="eyebrow max-w-md text-[0.7rem] leading-[1.7] text-muted">
-          Frå Kunstindustrimuseet til Noregs framste miljø for arkitektur og design.
-        </p>
-        <p className="mt-6 max-w-md text-[0.95rem] leading-relaxed text-ink-soft">
-          Arkitektur- og designhøgskolen i Oslo fyller 80 år. Dette er historia — frå krisekurset i
-          1945 til skulen ved Akerselva i dag — fortald gjennom verifiserte hendingar og kjelder frå
-          norske arkiv og register.
-        </p>
-        <div className="mt-9 flex items-center gap-2 text-muted">
-          <span className="eyebrow text-[0.62rem]">Utforsk tidslinja</span>
-          <ArrowDown className="h-4 w-4 animate-bounce text-aho" />
+  return (
+    <>
+      <SiteHeader />
+
+      {/* orange hero */}
+      <section className="bg-aho text-white">
+        <div className="mx-auto max-w-6xl px-5 py-14 sm:px-8 sm:py-20 lg:grid lg:grid-cols-2 lg:items-center lg:gap-12">
+          <div>
+            <Logo variant="orange" className="hidden" />
+            <div className="mb-6 h-px w-12 bg-white/50" />
+            <h1 className="font-serif text-6xl leading-[0.95] tracking-tight sm:text-7xl lg:text-8xl">80 år</h1>
+            <p className="eyebrow mt-5 text-[0.7rem] text-white/85">Utforsk historia til AHO</p>
+            <p className="mt-5 max-w-md text-[0.97rem] leading-relaxed text-white/90">
+              På vegen til verkelegheit: opplag, menneske, lærarar og bygg som har forma
+              Arkitektur- og designhøgskolen i Oslo gjennom 80 år.
+            </p>
+            <Link href="/tidslinje" className="mt-8 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-[12px] font-bold uppercase tracking-widest text-aho transition-transform hover:scale-[1.02]">
+              Start utforsking <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+          <div className="mt-10 overflow-hidden rounded-2xl ring-1 ring-white/20 lg:mt-0">
+            <ArchiveImage src={campus.media_url} alt={campus.alt} className="aspect-[4/3] w-full" rounded="rounded-2xl" />
+          </div>
         </div>
       </section>
 
-      <Timeline items={MILESTONES} />
-
-      <ArkivSok />
-
-      {/* footer */}
-      <footer className="border-t border-line bg-paper-2">
-        <div className="mx-auto max-w-[560px] px-5 py-12">
-          <Logo className="h-6" />
-          <p className="mt-4 max-w-sm font-serif text-xl text-ink">
-            Arkitektur- og designhøgskolen i Oslo
-          </p>
-          <p className="mt-2 text-sm text-muted">1945 – 2025 · 80 år med forming av framtida.</p>
-
-          <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 font-mono text-[11px] uppercase tracking-wider text-muted">
-            <Link href="/skisser" className="transition-colors hover:text-aho">
-              Ti UI-skisser →
+      {/* kort */}
+      <section className="mx-auto max-w-6xl px-5 py-14 sm:px-8">
+        <div className="grid gap-5 sm:grid-cols-3">
+          {KORT.map((k) => (
+            <Link key={k.n} href={k.href} className="group rounded-2xl border border-line bg-card p-6 transition-colors hover:border-aho/40">
+              <div className="font-mono text-xs text-aho">{k.n}</div>
+              <h2 className="mt-3 font-serif text-2xl text-ink">{k.title}</h2>
+              <p className="mt-2 text-sm leading-relaxed text-muted">{k.blurb}</p>
+              <span className="mt-4 inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-wider text-ink transition-colors group-hover:text-aho">
+                Opna <ArrowRight className="h-3.5 w-3.5" />
+              </span>
             </Link>
-            <a href="https://www.aho.no" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-aho">
-              aho.no →
-            </a>
-          </div>
-
-          <p className="mt-8 max-w-md text-[11px] leading-relaxed text-muted/80">
-            Kjelder: Store norske leksikon, Wikipedia og AHO. Årstal er kryssjekka; biletrettar er
-            førebels og må stadfestast før publisering. Bileta her er rettsfrie illustrasjonar.
-          </p>
+          ))}
         </div>
-      </footer>
-    </main>
+      </section>
+
+      {/* fremheva */}
+      <section className="mx-auto max-w-6xl px-5 pb-20 sm:px-8">
+        <div className="flex items-center justify-between border-t border-line pt-8">
+          <span className="eyebrow text-[0.62rem] text-muted">Frå tidslinja</span>
+          <Link href="/tidslinje" className="font-mono text-[11px] uppercase tracking-wider text-aho">Sjå alle →</Link>
+        </div>
+        <div className="mt-6 grid gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
+          {MILESTONES.filter((m) => m.accent).map((m) => (
+            <Link key={m.id} href={`/${m.id}`} className="group">
+              <div className={`font-serif text-4xl ${m.accent ? 'text-aho' : 'text-ink'}`}>{m.year}</div>
+              <div className="mt-1 text-[11px] font-bold uppercase tracking-widest text-ink">{m.title}</div>
+              <p className="mt-1.5 text-sm leading-snug text-muted">{m.lead}</p>
+            </Link>
+          ))}
+        </div>
+        <div className="mt-12 flex flex-col items-center gap-1 text-muted">
+          <span className="eyebrow text-[0.58rem]">Scroll for å sjå meir</span>
+          <ArrowDown className="h-4 w-4 text-aho" />
+        </div>
+      </section>
+    </>
   );
 }
