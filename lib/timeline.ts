@@ -4,7 +4,7 @@
 // eiga historieside (aho.no/om/aho-sin-historie). Årstal er kryssjekka.
 // Biletrettar er FØREBELS og må stadfestast før publisering — sjå `sources`.
 
-export type Discipline = 'institusjon' | 'arkitektur' | 'design' | 'stad';
+export type Discipline = 'institusjon' | 'arkitektur' | 'design' | 'landskap' | 'stad';
 
 export type Source = {
   name: string;
@@ -35,7 +35,7 @@ export const MILESTONES: Milestone[] = [
     kicker: 'Opphavet',
     title: 'Statens arkitektkurs',
     lead: 'Krisekurset ved Kunstindustriskulen',
-    body: 'AHO blir ført tilbake til «Kurs for krigsramte arkitektstuderande», som i 1945 vart til Statens arkitektkurs — ei line ved Statens handverks- og kunstindustriskule (SHKS). Kurset skulle auke talet på arkitektar til attreisinga av landet etter krigen.',
+    body: 'AHO blir ført tilbake til «Kurs for krigsramte arkitektstuderande», som i 1945 vart til Statens arkitektkurs — ei line ved Statens handverks- og kunstindustriskule (SHKS). Kurset skulle auke talet på arkitektar til attreisinga av landet etter krigen. Det vart fornya år for år som eit provisorium, og rakk å utdanne 189 arkitektar.',
     place: 'SHKS, Oslo',
     discipline: 'institusjon',
     motif: 'fasade',
@@ -62,6 +62,21 @@ export const MILESTONES: Milestone[] = [
     motif: 'rutenett',
     sources: [
       { name: 'Store norske leksikon', url: 'https://snl.no/Arkitektur-_og_designh%C3%B8gskolen_i_Oslo', license: 'CC BY-SA', access: 'Open' },
+    ],
+  },
+  {
+    id: '1966',
+    year: '1966',
+    kicker: 'Tenkinga',
+    title: 'Christian Norberg-Schulz',
+    lead: 'Teori som gav skulen internasjonal tyngd',
+    body: 'Christian Norberg-Schulz (1926–2000) kom til skulen i 1963 og var professor i arkitekturteori og -historie frå 1966 til 1992. Doktoravhandlinga «Intentions in Architecture» fekk internasjonalt gjennomslag og vart omsett til ni språk, og omgrepet hans om «genius loci» — staden sin ånd — gjorde fenomenologien til ein berebjelke i norsk arkitekturutdanning.',
+    place: 'Oslo',
+    discipline: 'arkitektur',
+    motif: 'rutenett',
+    sources: [
+      { name: 'Norsk biografisk leksikon', url: 'https://nbl.snl.no/Christian_Norberg-Schulz', license: 'CC BY-SA', access: 'Open' },
+      { name: 'AHO — om Norberg-Schulz', url: 'https://www.aho.no/forskning/nyheter/ti-ting-du-ma-vite-om-christian-norberg-schulz-en-.html', access: 'Open' },
     ],
   },
   {
@@ -139,19 +154,51 @@ export const MILESTONES: Milestone[] = [
     ],
   },
   {
+    id: '1997',
+    year: '1997',
+    kicker: 'Anerkjenning',
+    title: 'Sverre Fehn og Pritzker-prisen',
+    lead: 'AHO-professoren som vann arkitekturens «nobelpris»',
+    body: 'Sverre Fehn (1924–2009) var professor ved skulen frå 1971 til 1995 og ein legendarisk lærar. I 1997 fekk han Pritzker-prisen — framleis den einaste nordmannen som har vunne — same året som Heinrich-Tessenows gullmedalje. Saman med Norberg-Schulz gav han AHO ein eksepsjonell internasjonal posisjon.',
+    place: 'Oslo',
+    discipline: 'arkitektur',
+    motif: 'fasade',
+    accent: true,
+    sources: [
+      { name: 'Norsk biografisk leksikon', url: 'https://nbl.snl.no/Sverre_Fehn', license: 'CC BY-SA', access: 'Open' },
+      { name: 'The Pritzker Architecture Prize, 1997', url: 'https://www.pritzkerprize.com/laureates/1997', access: 'Open' },
+    ],
+  },
+  {
     id: '2001',
     year: '2001',
     kicker: 'Nytt hus',
     title: 'Maridalsveien 29',
     lead: 'Eit gammalt industribygg ved Akerselva',
-    body: 'Hausten 2001 flytta AHO til Maridalsveien 29 ved Akerselva. Det tidlegare industribygget vart bygd om til skule etter ein open arkitektkonkurranse (1998), ved Jarmund/Vigsnæs Arkitekter.',
+    body: 'Hausten 2001 flytta AHO til Maridalsveien 29 ved Akerselva. Bygget stod ferdig i 1938 som verkstad og lager for Oslo Lysverker, teikna av Oslos byarkitekt, og fasaden er verna. Det vart bygd om til skule på om lag 10 900 m² etter ein open arkitektkonkurranse i 1998 som Jarmund/Vigsnæs Arkitekter vann.',
     place: 'Maridalsveien 29, Oslo',
     discipline: 'stad',
     motif: 'nybygg',
     accent: true,
     sources: [
       { name: 'nn.wikipedia.org', url: 'https://nn.wikipedia.org/wiki/Arkitektur-_og_designh%C3%B8gskolen_i_Oslo', license: 'CC BY-SA 3.0', access: 'Open' },
+      { name: 'Jarmund/Vigsnæs — Store norske leksikon', url: 'https://snl.no/Jarmund/Vigsn%C3%A6s_-_arkitektkontor', license: 'CC BY-SA', access: 'Open' },
       { name: 'Foto: Maridalsveien 29', credit: 'Arkitektur.no (jubileum)', license: 'Rettar må avklarast', access: 'Krev avtale' },
+    ],
+  },
+  {
+    id: '2004',
+    year: '2004',
+    kicker: 'Landskap',
+    title: 'Master i landskapsarkitektur',
+    lead: 'Det tredje hovudsporet kjem til',
+    body: 'I 2004 oppretta AHO eit masterprogram i landskapsarkitektur — det tredje store fagsporet ved sida av arkitektur og design. Programmet blir i dag drive i samarbeid med Noregs arktiske universitet (UiT) i Tromsø.',
+    place: 'Oslo',
+    discipline: 'landskap',
+    motif: 'rutenett',
+    sources: [
+      { name: 'AHO — historie', url: 'https://www.aho.no/om/aho-sin-historie/', access: 'Open' },
+      { name: 'Oslo School of Architecture and Design — Wikipedia', url: 'https://en.wikipedia.org/wiki/Oslo_School_of_Architecture_and_Design', license: 'CC BY-SA', access: 'Open' },
     ],
   },
   {
@@ -166,6 +213,20 @@ export const MILESTONES: Milestone[] = [
     motif: 'segl',
     sources: [
       { name: 'Store norske leksikon', url: 'https://snl.no/Arkitektur-_og_designh%C3%B8gskolen_i_Oslo', license: 'CC BY-SA', access: 'Open' },
+    ],
+  },
+  {
+    id: '2009',
+    year: '2009',
+    kicker: 'Design',
+    title: 'Institutt for design',
+    lead: 'Frå industridesign til breitt designfag',
+    body: 'I 2009 skifta Institutt for industridesign namn til Institutt for design. Faget famnar no også tenestedesign og interaksjonsdesign, og designmiljøet har vakse til å vere på storleik med arkitekturmiljøet.',
+    place: 'AHO, Oslo',
+    discipline: 'design',
+    motif: 'verkstad',
+    sources: [
+      { name: 'Oslo School of Architecture and Design — Wikipedia', url: 'https://en.wikipedia.org/wiki/Oslo_School_of_Architecture_and_Design', license: 'CC BY-SA', access: 'Open' },
     ],
   },
   {
