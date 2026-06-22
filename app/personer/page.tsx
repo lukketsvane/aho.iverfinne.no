@@ -3,19 +3,19 @@ import { SiteHeader } from '@/components/SiteHeader';
 import { Eyebrow } from '@/components/ui';
 
 export const metadata: Metadata = {
-  title: 'Personar — AHO',
+  title: 'Personar, AHO',
   description: 'Menneske som har forma AHO. Persongalleriet er under arbeid.',
 };
 
 // Veldokumenterte professorar/figurar i AHO-/Oslo-arkitekturmiljøet.
 // Portrett og fulle biografiar blir lagde til når rettane er stadfesta.
 const PERSONAR = [
-  { namn: 'Arne Korsmo', år: '1900–1968', rolle: 'Arkitekt, professor' },
-  { namn: 'Knut Knutsen', år: '1903–1969', rolle: 'Arkitekt' },
-  { namn: 'Christian Norberg-Schulz', år: '1926–2000', rolle: 'Arkitekturteoretikar, professor' },
-  { namn: 'Sverre Fehn', år: '1924–2009', rolle: 'Arkitekt, professor' },
-  { namn: 'Wenche Selmer', år: '1920–1998', rolle: 'Arkitekt' },
-  { namn: 'Grete Prytz Kittelsen', år: '1917–2010', rolle: 'Designar' },
+  { namn: 'Arne Korsmo', år: '1900-1968', rolle: 'Arkitekt, professor' },
+  { namn: 'Knut Knutsen', år: '1903-1969', rolle: 'Arkitekt' },
+  { namn: 'Christian Norberg-Schulz', år: '1926-2000', rolle: 'Arkitekturteoretikar, professor' },
+  { namn: 'Sverre Fehn', år: '1924-2009', rolle: 'Arkitekt, professor' },
+  { namn: 'Wenche Selmer', år: '1920-1998', rolle: 'Arkitekt' },
+  { namn: 'Grete Prytz Kittelsen', år: '1917-2010', rolle: 'Designar' },
 ];
 
 const initialar = (n: string) =>
@@ -33,7 +33,7 @@ export default function PersonerPage() {
           designmiljøet.
         </p>
         <p className="mt-3 inline-block rounded-full bg-paper-2 px-3 py-1 font-mono text-[10px] uppercase tracking-wider text-muted">
-          Under arbeid — portrett og biografiar blir lagde til når rettane er klare
+          Under arbeid, portrett og biografiar blir lagde til når rettane er klare
         </p>
       </section>
 

@@ -1,6 +1,6 @@
 // ── Notion-adapter for «AHO bilete» ─────────────────────────────────────────
 // Valfri, køyretids-henting av biletdatabasen. Avhengig-fri (global fetch).
-// IKKJE kalla under bygg — gated på env, så Vercel-bygget aldri krasjar om
+// IKKJE kalla under bygg, gated på env, så Vercel-bygget aldri krasjar om
 // nøklane manglar. Mappar dei FAKTISKE Notion-eigenskapsnamna (norske, med
 // mellomrom) til AhoBilete. Sjå docs/DATA.md.
 
@@ -16,7 +16,7 @@ const NOTION_VERSION = '2022-06-28';
 // Databasen «AHO bilete» (eigen tabell, skild frå «AHO heile historia»).
 const BILETE_DB = process.env.NOTION_BILETE_DB_ID || '31983601-2179-494d-aa2f-6e5072610967';
 
-// Notion property-lesarar (defensive — toler manglande felt)
+// Notion property-lesarar (defensive, toler manglande felt)
 type Prop = any;
 const txt = (p: Prop): string =>
   ((p?.title ?? p?.rich_text ?? []) as any[])?.map((t) => t?.plain_text ?? '').join('') ?? '';

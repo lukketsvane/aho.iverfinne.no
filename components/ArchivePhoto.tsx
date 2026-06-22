@@ -77,7 +77,7 @@ function Scene({ motif }: { motif: Motif }) {
           <rect x="58" y="150" width="4" height="100" fill={DARK} opacity="0.5" />
         </g>
       );
-    case 'segl': // abstrakt segl — ekko av AHO sin «O»
+    case 'segl': // abstrakt segl, ekko av AHO sin «O»
       return (
         <g>
           <circle cx="200" cy="150" r="92" fill="none" stroke={MID} strokeWidth="10" />

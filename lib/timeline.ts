@@ -1,8 +1,8 @@
-// ── Tidslinje for AHO — verifiserte hendingar ────────────────────────────────
+// ── Tidslinje for AHO, verifiserte hendingar ────────────────────────────────
 // Kjelder: Store norske leksikon (snl.no/Statens_arkitektkurs,
 // snl.no/Arkitektur-_og_designhøgskolen_i_Oslo), nn.wikipedia.org, og AHO si
 // eiga historieside (aho.no/om/aho-sin-historie). Årstal er kryssjekka.
-// Biletrettar er FØREBELS og må stadfestast før publisering — sjå `sources`.
+// Biletrettar er FØREBELS og må stadfestast før publisering, sjå `sources`.
 
 export type Discipline = 'institusjon' | 'arkitektur' | 'design' | 'landskap' | 'stad';
 
@@ -20,7 +20,7 @@ export type Milestone = {
   kicker: string; // sperra versal-etikett
   title: string;
   lead: string; // kort underoverskrift
-  body: string; // 2–3 setningar
+  body: string; // 2-3 setningar
   place?: string;
   discipline: Discipline;
   motif: 'fasade' | 'gate' | 'verkstad' | 'nybygg' | 'segl' | 'rutenett';
@@ -35,7 +35,7 @@ export const MILESTONES: Milestone[] = [
     kicker: 'Opphavet',
     title: 'Statens arkitektkurs',
     lead: 'Krisekurset ved Kunstindustriskulen',
-    body: 'AHO blir ført tilbake til «Kurs for krigsramte arkitektstuderande», som i 1945 vart til Statens arkitektkurs — ei line ved Statens handverks- og kunstindustriskule (SHKS). Kurset skulle auke talet på arkitektar til attreisinga av landet etter krigen. Det vart fornya år for år som eit provisorium, og rakk å utdanne 189 arkitektar.',
+    body: 'AHO blir ført tilbake til «Kurs for krigsramte arkitektstuderande», som i 1945 vart til Statens arkitektkurs, ei line ved Statens handverks- og kunstindustriskule (SHKS). Kurset skulle auke talet på arkitektar til attreisinga av landet etter krigen. Det vart fornya år for år som eit provisorium, og rakk å utdanne 189 arkitektar.',
     place: 'SHKS, Oslo',
     discipline: 'institusjon',
     motif: 'fasade',
@@ -70,13 +70,13 @@ export const MILESTONES: Milestone[] = [
     kicker: 'Tenkinga',
     title: 'Christian Norberg-Schulz',
     lead: 'Teori som gav skulen internasjonal tyngd',
-    body: 'Christian Norberg-Schulz (1926–2000) kom til skulen i 1963 og var professor i arkitekturteori og -historie frå 1966 til 1992. Doktoravhandlinga «Intentions in Architecture» fekk internasjonalt gjennomslag og vart omsett til ni språk, og omgrepet hans om «genius loci» — staden sin ånd — gjorde fenomenologien til ein berebjelke i norsk arkitekturutdanning.',
+    body: 'Christian Norberg-Schulz (1926-2000) kom til skulen i 1963 og var professor i arkitekturteori og -historie frå 1966 til 1992. Doktoravhandlinga «Intentions in Architecture» fekk internasjonalt gjennomslag og vart omsett til ni språk, og omgrepet hans om «genius loci», staden sin ånd, gjorde fenomenologien til ein berebjelke i norsk arkitekturutdanning.',
     place: 'Oslo',
     discipline: 'arkitektur',
     motif: 'rutenett',
     sources: [
       { name: 'Norsk biografisk leksikon', url: 'https://nbl.snl.no/Christian_Norberg-Schulz', license: 'CC BY-SA', access: 'Open' },
-      { name: 'AHO — om Norberg-Schulz', url: 'https://www.aho.no/forskning/nyheter/ti-ting-du-ma-vite-om-christian-norberg-schulz-en-.html', access: 'Open' },
+      { name: 'AHO, om Norberg-Schulz', url: 'https://www.aho.no/forskning/nyheter/ti-ting-du-ma-vite-om-christian-norberg-schulz-en-.html', access: 'Open' },
     ],
   },
   {
@@ -101,7 +101,7 @@ export const MILESTONES: Milestone[] = [
     kicker: 'Namn',
     title: 'Arkitekthøgskolen i Oslo',
     lead: 'Namnet skulen ber i meir enn tre tiår',
-    body: 'I 1969 skifta Statens Arkitektskole i Oslo namn til Arkitekthøgskolen i Oslo — forkortinga AHO som framleis står i dag.',
+    body: 'I 1969 skifta Statens Arkitektskole i Oslo namn til Arkitekthøgskolen i Oslo, forkortinga AHO som framleis står i dag.',
     place: 'Oslo',
     discipline: 'institusjon',
     motif: 'segl',
@@ -115,13 +115,13 @@ export const MILESTONES: Milestone[] = [
     kicker: 'Designsporet',
     title: 'Industridesign',
     lead: 'Toårig etterutdanning startar',
-    body: 'Industridesign kom inn på AHO som eit toårig etterutdanningskurs i 1979 — starten på det designfaglege sporet som etter kvart skulle prege heile skulen.',
+    body: 'Industridesign kom inn på AHO som eit toårig etterutdanningskurs i 1979, starten på det designfaglege sporet som etter kvart skulle prege heile skulen.',
     place: 'AHO, Oslo',
     discipline: 'design',
     motif: 'verkstad',
     accent: true,
     sources: [
-      { name: 'AHO — historie', url: 'https://www.aho.no/om/aho-sin-historie/', access: 'Open' },
+      { name: 'AHO, historie', url: 'https://www.aho.no/om/aho-sin-historie/', access: 'Open' },
     ],
   },
   {
@@ -135,7 +135,7 @@ export const MILESTONES: Milestone[] = [
     discipline: 'design',
     motif: 'verkstad',
     sources: [
-      { name: 'AHO — historie', url: 'https://www.aho.no/om/aho-sin-historie/', access: 'Open' },
+      { name: 'AHO, historie', url: 'https://www.aho.no/om/aho-sin-historie/', access: 'Open' },
       { name: 'Foto: modellverkstad', credit: 'AHO-arkivet', license: 'Rettar må avklarast', access: 'Krev avtale' },
     ],
   },
@@ -145,7 +145,7 @@ export const MILESTONES: Milestone[] = [
     kicker: 'Samling',
     title: 'Institutt for industridesign',
     lead: 'Design og arkitektur under same tak',
-    body: 'Institutt for industridesign vart innlemma i skulen i 1996, og samla design- og arkitekturmiljøa i éin institusjon — grunnlaget for dagens AHO.',
+    body: 'Institutt for industridesign vart innlemma i skulen i 1996, og samla design- og arkitekturmiljøa i éin institusjon, grunnlaget for dagens AHO.',
     place: 'Oslo',
     discipline: 'design',
     motif: 'rutenett',
@@ -159,7 +159,7 @@ export const MILESTONES: Milestone[] = [
     kicker: 'Anerkjenning',
     title: 'Sverre Fehn og Pritzker-prisen',
     lead: 'AHO-professoren som vann arkitekturens «nobelpris»',
-    body: 'Sverre Fehn (1924–2009) var professor ved skulen frå 1971 til 1995 og ein legendarisk lærar. I 1997 fekk han Pritzker-prisen — framleis den einaste nordmannen som har vunne — same året som Heinrich-Tessenows gullmedalje. Saman med Norberg-Schulz gav han AHO ein eksepsjonell internasjonal posisjon.',
+    body: 'Sverre Fehn (1924-2009) var professor ved skulen frå 1971 til 1995 og ein legendarisk lærar. I 1997 fekk han Pritzker-prisen, framleis den einaste nordmannen som har vunne, same året som Heinrich-Tessenows gullmedalje. Saman med Norberg-Schulz gav han AHO ein eksepsjonell internasjonal posisjon.',
     place: 'Oslo',
     discipline: 'arkitektur',
     motif: 'fasade',
@@ -182,7 +182,7 @@ export const MILESTONES: Milestone[] = [
     accent: true,
     sources: [
       { name: 'nn.wikipedia.org', url: 'https://nn.wikipedia.org/wiki/Arkitektur-_og_designh%C3%B8gskolen_i_Oslo', license: 'CC BY-SA 3.0', access: 'Open' },
-      { name: 'Jarmund/Vigsnæs — Store norske leksikon', url: 'https://snl.no/Jarmund/Vigsn%C3%A6s_-_arkitektkontor', license: 'CC BY-SA', access: 'Open' },
+      { name: 'Jarmund/Vigsnæs, Store norske leksikon', url: 'https://snl.no/Jarmund/Vigsn%C3%A6s_-_arkitektkontor', license: 'CC BY-SA', access: 'Open' },
       { name: 'Foto: Maridalsveien 29', credit: 'Arkitektur.no (jubileum)', license: 'Rettar må avklarast', access: 'Krev avtale' },
     ],
   },
@@ -192,13 +192,13 @@ export const MILESTONES: Milestone[] = [
     kicker: 'Landskap',
     title: 'Master i landskapsarkitektur',
     lead: 'Det tredje hovudsporet kjem til',
-    body: 'I 2004 oppretta AHO eit masterprogram i landskapsarkitektur — det tredje store fagsporet ved sida av arkitektur og design. Programmet blir i dag drive i samarbeid med Noregs arktiske universitet (UiT) i Tromsø.',
+    body: 'I 2004 oppretta AHO eit masterprogram i landskapsarkitektur, det tredje store fagsporet ved sida av arkitektur og design. Programmet blir i dag drive i samarbeid med Noregs arktiske universitet (UiT) i Tromsø.',
     place: 'Oslo',
     discipline: 'landskap',
     motif: 'rutenett',
     sources: [
-      { name: 'AHO — historie', url: 'https://www.aho.no/om/aho-sin-historie/', access: 'Open' },
-      { name: 'Oslo School of Architecture and Design — Wikipedia', url: 'https://en.wikipedia.org/wiki/Oslo_School_of_Architecture_and_Design', license: 'CC BY-SA', access: 'Open' },
+      { name: 'AHO, historie', url: 'https://www.aho.no/om/aho-sin-historie/', access: 'Open' },
+      { name: 'Oslo School of Architecture and Design, Wikipedia', url: 'https://en.wikipedia.org/wiki/Oslo_School_of_Architecture_and_Design', license: 'CC BY-SA', access: 'Open' },
     ],
   },
   {
@@ -207,7 +207,7 @@ export const MILESTONES: Milestone[] = [
     kicker: 'Namn',
     title: 'Arkitektur- og designhøgskolen',
     lead: 'Designet kjem inn i namnet',
-    body: 'I 2005 vart namnet endra til Arkitektur- og designhøgskolen i Oslo — eit namn som speglar det utvida oppdraget med både arkitektur, landskap, urbanisme og design.',
+    body: 'I 2005 vart namnet endra til Arkitektur- og designhøgskolen i Oslo, eit namn som speglar det utvida oppdraget med både arkitektur, landskap, urbanisme og design.',
     place: 'Oslo',
     discipline: 'institusjon',
     motif: 'segl',
@@ -226,7 +226,7 @@ export const MILESTONES: Milestone[] = [
     discipline: 'design',
     motif: 'verkstad',
     sources: [
-      { name: 'Oslo School of Architecture and Design — Wikipedia', url: 'https://en.wikipedia.org/wiki/Oslo_School_of_Architecture_and_Design', license: 'CC BY-SA', access: 'Open' },
+      { name: 'Oslo School of Architecture and Design, Wikipedia', url: 'https://en.wikipedia.org/wiki/Oslo_School_of_Architecture_and_Design', license: 'CC BY-SA', access: 'Open' },
     ],
   },
   {
@@ -235,13 +235,13 @@ export const MILESTONES: Milestone[] = [
     kicker: 'Jubileum',
     title: '80 år med forming av framtida',
     lead: 'Historia held fram',
-    body: 'I 2025 fyller AHO 80 år. Frå eit krisekurs i 1945 til ein av Europas leiande sjølvstendige skular for arkitektur og design — historia held fram.',
+    body: 'I 2025 fyller AHO 80 år. Frå eit krisekurs i 1945 til ein av Europas leiande sjølvstendige skular for arkitektur og design, historia held fram.',
     place: 'Oslo',
     discipline: 'institusjon',
     motif: 'nybygg',
     accent: true,
     sources: [
-      { name: 'AHO — 80-årsjubileum', url: 'https://www.aho.no/aho-80-arsjubileum/', access: 'Open' },
+      { name: 'AHO, 80-årsjubileum', url: 'https://www.aho.no/aho-80-arsjubileum/', access: 'Open' },
     ],
   },
 ];
@@ -250,7 +250,7 @@ export const MILESTONES: Milestone[] = [
 // Kvar skisse er eitt iPhone-skjermbilde som utforskar éin del av appen.
 export type Sketch = {
   id: string;
-  n: string; // 01–10
+  n: string; // 01-10
   title: string;
   blurb: string;
 };

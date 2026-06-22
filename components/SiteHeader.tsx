@@ -18,7 +18,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-30 border-b border-line/60 bg-paper/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3.5 sm:px-8">
-        <Link href="/" aria-label="AHO — heim" className="shrink-0">
+        <Link href="/" aria-label="AHO, heim" className="shrink-0">
           <Logo className="h-6" />
         </Link>
 

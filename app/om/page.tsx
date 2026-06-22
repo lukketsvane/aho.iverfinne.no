@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { SiteHeader } from '@/components/SiteHeader';
 import { Logo, Eyebrow } from '@/components/ui';
 
-export const metadata: Metadata = { title: 'Om — AHO 80 år', description: 'Om jubileumsprosjektet og kjeldene.' };
+export const metadata: Metadata = { title: 'Om, AHO 80 år', description: 'Om jubileumsprosjektet og kjeldene.' };
 
 export default function OmPage() {
   return (
@@ -17,7 +17,7 @@ export default function OmPage() {
         <div className="prose prose-stone mt-8 max-w-none text-ink-soft">
           <p className="text-[1.02rem] leading-relaxed">
             Arkitektur- og designhøgskolen i Oslo fyller <strong>80 år i 2025</strong>. Dette er ei
-            scrollbar tidslinje som dokumenterer historia — frå krisekurset «Statens arkitektkurs» ved
+            scrollbar tidslinje som dokumenterer historia, frå krisekurset «Statens arkitektkurs» ved
             Kunstindustriskulen i 1945, til den sjølvstendige skulen ved Akerselva i dag.
           </p>
           <p className="leading-relaxed">
@@ -42,9 +42,9 @@ export default function OmPage() {
 
         <h2 className="mt-12 font-serif text-2xl text-ink">Kjelder</h2>
         <ul className="mt-4 space-y-2 font-mono text-[12px] text-muted">
-          <li>· Store norske leksikon — snl.no</li>
+          <li>· Store norske leksikon, snl.no</li>
           <li>· Wikipedia (nynorsk)</li>
-          <li>· AHO — aho.no/om/aho-sin-historie</li>
+          <li>· AHO, aho.no/om/aho-sin-historie</li>
           <li>· Foto: Wikimedia Commons (CC / PD)</li>
           <li>· Biletdatabase: Notion «AHO bilete»</li>
         </ul>
@@ -57,7 +57,7 @@ export default function OmPage() {
         <div className="mt-12 border-t border-line pt-8">
           <Logo className="h-6" />
           <p className="mt-3 font-mono text-[11px] leading-relaxed text-muted/80">
-            Ei tidslinje for AHO · 1945–2025 · kjelder frå norske arkiv og register.
+            Ei tidslinje for AHO · 1945-2025 · kjelder frå norske arkiv og register.
           </p>
         </div>
       </section>
