@@ -4,14 +4,14 @@ import { SiteHeader } from '@/components/SiteHeader';
 import { Eyebrow } from '@/components/ui';
 
 export const metadata: Metadata = {
-  title: 'Kart — Stadene · AHO',
+  title: 'Kart, Stadene · AHO',
   description: 'AHO sine adresser gjennom tida, frå St. Olavs gate til Maridalsveien 29.',
 };
 
 const STADER = [
-  { år: '1945', namn: 'Statens handverks- og kunstindustriskule', sub: 'Ullevålsveien 5 — opphavet' },
-  { år: '1968', namn: 'St. Olavs gate 2–4', sub: '1968–2001 — eige hus i Kvadraturen', aktiv: false },
-  { år: '2001', namn: 'Maridalsveien 29', sub: '2001– — ombygd av Jarmund/Vigsnæs', aktiv: true },
+  { år: '1945', namn: 'Statens handverks- og kunstindustriskule', sub: 'Ullevålsveien 5, opphavet' },
+  { år: '1968', namn: 'St. Olavs gate 2-4', sub: '1968-2001, eige hus i Kvadraturen', aktiv: false },
+  { år: '2001', namn: 'Maridalsveien 29', sub: '2001-, ombygd av Jarmund/Vigsnæs', aktiv: true },
 ];
 
 export default function KartPage() {
@@ -47,14 +47,14 @@ export default function KartPage() {
           <div className="pointer-events-none absolute left-[58%] top-[24%] -translate-y-full">
             <div className="rounded-md bg-card/95 px-2 py-1 text-center shadow-sm ring-1 ring-black/5">
               <div className="text-[9px] font-bold uppercase tracking-wider text-ink">St. Olavs gate</div>
-              <div className="font-mono text-[8px] text-muted">1968–2001</div>
+              <div className="font-mono text-[8px] text-muted">1968-2001</div>
             </div>
             <MapPin className="mx-auto h-5 w-5 fill-ink text-ink" />
           </div>
           <div className="pointer-events-none absolute left-[40%] top-[74%] -translate-y-full">
             <div className="rounded-md bg-card/95 px-2 py-1 text-center shadow-sm ring-1 ring-black/5">
               <div className="text-[9px] font-bold uppercase tracking-wider text-ink">Maridalsveien 29</div>
-              <div className="font-mono text-[8px] text-muted">2001–</div>
+              <div className="font-mono text-[8px] text-muted">2001-</div>
             </div>
             <MapPin className="mx-auto h-6 w-6 fill-aho text-aho" />
           </div>

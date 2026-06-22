@@ -1,4 +1,4 @@
-# Ved sida av jubileet — ei tidslinje for AHO
+# Ved sida av jubileet, ei tidslinje for AHO
 
 Ein scrollbar tidslinje-app som dokumenterer historia til **Arkitektur- og
 designhøgskolen i Oslo (AHO)**, som fyller **80 år i 2025**. Frå krisekurset
@@ -8,7 +8,7 @@ iOS-/iPhone-først nettstad bygd med **Next.js 15 + React 19 + Tailwind v4**.
 Auto-deploy til **aho-80.iverfinne.no** / **aho-80.vercel.app** via Vercel.
 
 > **Ingen Google-AI-integrasjon.** Appen byggjer og køyrer heilt utan
-> API-nøklar — arkivsøket gjer eit lokalt oppslag i dei verifiserte
+> API-nøklar, arkivsøket gjer eit lokalt oppslag i dei verifiserte
 > hendingane. (Den tidlegare Gemini-integrasjonen er teken ut med vilje.)
 
 ## Ti UI-skisser
@@ -53,7 +53,7 @@ components/
   ArchivePhoto.tsx    # rettsfrie svart-kvitt «arkivfoto» (SVG)
   ArkivSok.tsx, ui.tsx
 lib/
-  timeline.ts         # verifiserte hendingar 1945–2025 + kjelder
+  timeline.ts         # verifiserte hendingar 1945-2025 + kjelder
   aho-bilete.ts       # typar for Notion-databasen (rettar)
   notion.ts           # valfri Notion-adapter (env-gated)
 public/logo/          # offisielle AHO-logoar + utkappa AHO-merke
@@ -65,6 +65,6 @@ docs/DATA.md          # datamodell, kjelder og rettar
 ## Data og kjelder
 
 Tidslinja byggjer på kryssjekka årstal frå Store norske leksikon, Wikipedia og
-AHO si eiga historieside. Bileta i appen er **rettsfrie SVG-illustrasjonar** —
+AHO si eiga historieside. Bileta i appen er **rettsfrie SVG-illustrasjonar** -
 faktiske arkivfoto kjem inn via Notion-databasen `aho_bilete` når rettane er
 avklara. Sjå [`docs/DATA.md`](docs/DATA.md).

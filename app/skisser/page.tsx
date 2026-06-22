@@ -6,7 +6,7 @@ import { SCREENS } from '@/components/sketches';
 import { Phone, Logo, Eyebrow } from '@/components/ui';
 
 export const metadata: Metadata = {
-  title: 'Ti UI-skisser — Ved sida av jubileet',
+  title: 'Ti UI-skisser, Ved sida av jubileet',
   description: 'Ti genererte UI-skisser for AHO si jubileums-tidslinje: hero, tidslinje, hending, arkivsøk, kart, designsporet, arkiv, kjeldekort, tiår og jubileum.',
 };
 
@@ -31,7 +31,7 @@ export default function Skisser() {
           Ti UI-skisser for jubileums&shy;tidslinja
         </h1>
         <p className="mt-4 max-w-xl text-[0.95rem] leading-relaxed text-ink-soft">
-          Ti skjermbilete som utforskar appen «Ved sida av jubileet» — frå opningsbilde til
+          Ti skjermbilete som utforskar appen «Ved sida av jubileet», frå opningsbilde til
           kjeldekritikk. Same designsystem som tidslinja: papirtone, AHO-oransje, serif-display og
           svart-kvitt arkiv. Bygde som ekte React-skjermar, ikkje AI-bilete.
         </p>

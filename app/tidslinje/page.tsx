@@ -7,8 +7,8 @@ import { SiteHeader } from '@/components/SiteHeader';
 import { Eyebrow } from '@/components/ui';
 
 export const metadata: Metadata = {
-  title: 'Tidslinje — Ved sida av jubileet · AHO',
-  description: 'Ei scrollbar tidslinje for AHO, 1945–2025.',
+  title: 'Tidslinje, Ved sida av jubileet · AHO',
+  description: 'Ei scrollbar tidslinje for AHO, 1945-2025.',
 };
 
 export default function TidslinjePage() {
@@ -25,7 +25,7 @@ export default function TidslinjePage() {
           Ved sida av jubileet: ei tidslinje for AHO
         </h1>
         <p className="mt-6 max-w-md text-[0.95rem] leading-relaxed text-ink-soft">
-          Frå krisekurset i 1945 til skulen ved Akerselva i dag — fortald gjennom verifiserte
+          Frå krisekurset i 1945 til skulen ved Akerselva i dag, fortald gjennom verifiserte
           hendingar og kjelder frå norske arkiv og register. Trykk på eit år for heile historia.
         </p>
         <div className="mt-9 flex items-center gap-2 text-muted">

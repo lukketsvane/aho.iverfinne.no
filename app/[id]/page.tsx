@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const { id } = await params;
   const m = MILESTONES.find((x) => x.id === id);
   if (!m) return {};
-  return { title: `${m.year} — ${m.title} · AHO`, description: m.lead };
+  return { title: `${m.year}, ${m.title} · AHO`, description: m.lead };
 }
 
 export default async function MilestonePage({ params }: { params: Promise<{ id: string }> }) {
@@ -30,7 +30,7 @@ export default async function MilestonePage({ params }: { params: Promise<{ id: 
     <main className="min-h-screen bg-paper pb-24">
       <header className="sticky top-0 z-40 border-b border-line/60 bg-paper/85 backdrop-blur-md">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3.5 sm:px-8">
-          <Link href="/" aria-label="AHO — heim"><Logo className="h-6" /></Link>
+          <Link href="/" aria-label="AHO, heim"><Logo className="h-6" /></Link>
           <Link href="/skisser" className="rounded-full p-2 text-ink-soft transition-colors hover:bg-paper-2" aria-label="Meny">
             <Menu className="h-5 w-5" />
           </Link>

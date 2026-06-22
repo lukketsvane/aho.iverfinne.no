@@ -3,7 +3,7 @@ import { SiteHeader } from '@/components/SiteHeader';
 import { ArkivSok } from '@/components/ArkivSok';
 import { Eyebrow } from '@/components/ui';
 
-export const metadata: Metadata = { title: 'Søk — AHO', description: 'Søk i AHO-historia og kjeldene.' };
+export const metadata: Metadata = { title: 'Søk, AHO', description: 'Søk i AHO-historia og kjeldene.' };
 
 const FORSLAG = ['Maridalsveien', 'industridesign', '1968', 'St. Olavs gate', 'Kunstindustri', 'jubileum'];
 

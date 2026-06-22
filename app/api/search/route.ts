@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { MILESTONES } from '@/lib/timeline';
 
-// Lokalt arkivsøk — ingen eksterne AI-kall. Søkjer i dei verifiserte
+// Lokalt arkivsøk, ingen eksterne AI-kall. Søkjer i dei verifiserte
 // hendingane i tidslinja. (Google-AI-integrasjonen er teken ut med vilje;
 // appen byggjer og køyrer utan API-nøklar.)
 export async function POST(req: NextRequest) {

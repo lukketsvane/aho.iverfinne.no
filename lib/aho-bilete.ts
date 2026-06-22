@@ -36,8 +36,8 @@ export type AhoBilete = {
   tittel: string;
   slug: string; // stabil nøkkel
   rights_status: RightsStatus;
-  sort_order: number; // Notion: «Sortering» (00, 01, 14 …) — reine sorteringsnøklar
-  year: number | null; // Notion: «Årstal» — faktisk årstal, nullbar
+  sort_order: number; // Notion: «Sortering» (00, 01, 14 …), reine sorteringsnøklar
+  year: number | null; // Notion: «Årstal», faktisk årstal, nullbar
   seksjon: Seksjon;
   prioritet: Prioritet;
   fil?: string; // Notion: «Fil» (opplasta fil-URL)

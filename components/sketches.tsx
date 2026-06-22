@@ -34,7 +34,7 @@ function TopBar({ left, title }: { left?: React.ReactNode; title?: React.ReactNo
   );
 }
 
-/* 01 — Opning / hero ------------------------------------------------------ */
+/* 01, Opning / hero ------------------------------------------------------ */
 function Hero() {
   const nodes = [find('1945'), find('1961'), find('1968')];
   return (
@@ -80,7 +80,7 @@ function Hero() {
   );
 }
 
-/* 02 — Tidslinje (liste) -------------------------------------------------- */
+/* 02, Tidslinje (liste) -------------------------------------------------- */
 function TidslinjeListe() {
   const rows = MILESTONES.slice(0, 6);
   return (
@@ -114,7 +114,7 @@ function TidslinjeListe() {
   );
 }
 
-/* 03 — Hending i detalj (1945) ------------------------------------------- */
+/* 03, Hending i detalj (1945) ------------------------------------------- */
 function Hending() {
   const m = find('1945');
   return (
@@ -153,7 +153,7 @@ function Hending() {
   );
 }
 
-/* 04 — Arkivsøk ----------------------------------------------------------- */
+/* 04, Arkivsøk ----------------------------------------------------------- */
 function Arkivsok() {
   const res = [find('1945'), find('1968'), find('1979')];
   return (
@@ -197,7 +197,7 @@ function Arkivsok() {
   );
 }
 
-/* 05 — Kart / stadene ----------------------------------------------------- */
+/* 05, Kart / stadene ----------------------------------------------------- */
 function Kart() {
   return (
     <Screen>
@@ -216,8 +216,8 @@ function Kart() {
           {/* flyttelinje */}
           <path d="M210 120 Q150 220 130 300" fill="none" stroke="#ed4723" strokeWidth="2" strokeDasharray="5 5" />
         </svg>
-        <Pin x="62%" y="26%" label="St. Olavs gate 2–4" sub="1968 – 2001" />
-        <Pin x="38%" y="70%" label="Maridalsveien 29" sub="2001 –" active />
+        <Pin x="62%" y="26%" label="St. Olavs gate 2-4" sub="1968-2001" />
+        <Pin x="38%" y="70%" label="Maridalsveien 29" sub="2001 -" active />
       </div>
       <div className="px-5 py-4">
         <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-wider text-muted">
@@ -248,7 +248,7 @@ function Pin({ x, y, label, sub, active }: { x: string; y: string; label: string
   );
 }
 
-/* 06 — Designsporet ------------------------------------------------------- */
+/* 06, Designsporet ------------------------------------------------------- */
 function Design() {
   const cards = [find('1979'), find('1983')];
   return (
@@ -286,7 +286,7 @@ function Design() {
   );
 }
 
-/* 07 — Arkivgalleri ------------------------------------------------------- */
+/* 07, Arkivgalleri ------------------------------------------------------- */
 function Arkiv() {
   const tiar = ['1940', '1950', '1960', '1970', '1980'];
   const grid = ['fasade', 'gate', 'verkstad', 'rutenett', 'nybygg', 'segl', 'fasade', 'verkstad'] as const;
@@ -309,13 +309,13 @@ function Arkiv() {
         ))}
       </div>
       <div className="px-5 pb-6 text-center font-mono text-[9px] uppercase tracking-wider text-muted/70">
-        Arkivmateriale — sjekk rettar før bruk
+        Arkivmateriale, sjekk rettar før bruk
       </div>
     </Screen>
   );
 }
 
-/* 08 — Kjeldekort --------------------------------------------------------- */
+/* 08, Kjeldekort --------------------------------------------------------- */
 function Kjelde() {
   const m = find('1945');
   const rows: [string, string][] = [
@@ -383,7 +383,7 @@ function Kjelde() {
   );
 }
 
-/* 09 — Tiår-navigasjon ---------------------------------------------------- */
+/* 09, Tiår-navigasjon ---------------------------------------------------- */
 function Tiar() {
   const tiar = ['1940', '1950', '1960', '1970', '1980', '1990', '2000', '2010', '2020'];
   const strip = [find('1968'), find('1979'), find('1983')];
@@ -400,7 +400,7 @@ function Tiar() {
       </div>
       <div className="px-5 pt-6">
         <h1 className="font-serif text-5xl tracking-tight">Åtti år</h1>
-        <p className="mt-1 font-serif text-lg italic text-muted">1945 – 2025</p>
+        <p className="mt-1 font-serif text-lg italic text-muted">1945-2025</p>
       </div>
       <div className="no-scrollbar mt-5 flex gap-3 overflow-x-auto px-5 pb-2">
         {strip.map((m, i) => (
@@ -426,7 +426,7 @@ function Tiar() {
   );
 }
 
-/* 10 — Jubileum / om ------------------------------------------------------ */
+/* 10, Jubileum / om ------------------------------------------------------ */
 function Jubileum() {
   const m = find('2025');
   return (
@@ -440,7 +440,7 @@ function Jubileum() {
         <p className="mt-2 font-serif text-lg italic text-ink-soft">Historia held fram.</p>
 
         <div className="mt-6 rounded-xl border border-line bg-card/60 p-3 font-mono text-[10px] leading-relaxed text-muted">
-          Ei tidslinje for AHO · 1945–2025 · kjelder frå norske arkiv og register.
+          Ei tidslinje for AHO · 1945-2025 · kjelder frå norske arkiv og register.
         </div>
 
         <div className="mt-auto flex items-center justify-between py-6">

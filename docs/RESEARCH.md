@@ -1,4 +1,4 @@
-# Tidslinje-research — skrapa kjeldemateriale
+# Tidslinje-research, skrapa kjeldemateriale
 
 Råmateriale samla inn frå opne, verifiserbare kjelder (Store norske leksikon,
 Norsk biografisk leksikon, nn/en Wikipedia, aho.no, arkitektur.no, Pritzker
@@ -9,8 +9,8 @@ Punkt som **ikkje** er løfta til eigne hendingar enno, er merka «kandidat».
 
 | År | Hending | I tidslinja? | Kjelde |
 |----|---------|:---:|--------|
-| 1945 | Statens arkitektkurs — line ved SHKS, framhald av «Kurs for krigsramte arkitektstuderande» | ✓ | SNL, nn.wikipedia |
-| 1946–1963 | Kurset fornya år for år som provisorium; utdanna **189 arkitektar** | ✓ (1945) | SNL: Statens arkitektkurs |
+| 1945 | Statens arkitektkurs, line ved SHKS, framhald av «Kurs for krigsramte arkitektstuderande» | ✓ | SNL, nn.wikipedia |
+| 1946-1963 | Kurset fornya år for år som provisorium; utdanna **189 arkitektar** | ✓ (1945) | SNL: Statens arkitektkurs |
 | 1961 | Sjølvstendig vitskapleg høgskule: Statens Arkitektskole i Oslo (SAO) | ✓ | SNL |
 | 1963 | Christian Norberg-Schulz tilsett som lærar i arkitekturteori/-historie | ✓ (1966) | NBL |
 | 1966 | Norberg-Schulz professor (til 1992) | ✓ | NBL |
@@ -23,7 +23,7 @@ Punkt som **ikkje** er løfta til eigne hendingar enno, er merka «kandidat».
 | 1995 | Status som sjølvstendig institusjon stadfesta i UH-lova | kandidat | SNL |
 | 1996 | Institutt for industridesign innlemma i AHO | ✓ | SNL |
 | 1997 | Sverre Fehn får Pritzker-prisen + Heinrich-Tessenows gullmedalje | ✓ | NBL, Pritzker |
-| 1998 | Open arkitektkonkurranse for Maridalsveien 29 — vunne av Jarmund/Vigsnæs | ✓ (2001) | SNL, arkitektur.no |
+| 1998 | Open arkitektkonkurranse for Maridalsveien 29, vunne av Jarmund/Vigsnæs | ✓ (2001) | SNL, arkitektur.no |
 | 2001 | Flytting til Maridalsveien 29 ved Akerselva (~10 900 m²) | ✓ | SNL/wikipedia |
 | 2004 | Master i landskapsarkitektur oppretta | ✓ | AHO, en.wikipedia |
 | 2005 | Namnet Arkitektur- og designhøgskolen i Oslo | ✓ | SNL |
@@ -35,20 +35,20 @@ Punkt som **ikkje** er løfta til eigne hendingar enno, er merka «kandidat».
 - **St. Olavs gate-nummer**: SNL skriv gate **6**, nn.wikipedia skriv gate **4**
   (Hammersborg). Tidslinja brukar 4 (som før). Bør stadfestast.
 - **Skipingsår for kurset**: 1945 (line/krisekurs) vs. SNL-artikkelen
-  «Statens arkitektkurs» som daterer sjølve kurset til 1946–1963. Tidslinja
+  «Statens arkitektkurs» som daterer sjølve kurset til 1946-1963. Tidslinja
   brukar 1945 som opphav, 1961 som sjølvstende.
 
 ## 2. Nøkkelpersonar
 
-- **Christian Norberg-Schulz (1926–2000)** — professor i arkitekturteori
-  1966–1992. «Intentions in Architecture» (omsett til ni språk), omgrepet
+- **Christian Norberg-Schulz (1926-2000)**, professor i arkitekturteori
+  1966-1992. «Intentions in Architecture» (omsett til ni språk), omgrepet
   *genius loci*, fenomenologi. *(NBL)*
-- **Sverre Fehn (1924–2009)** — professor 1971–1995, Pritzker-prisen 1997
+- **Sverre Fehn (1924-2009)**, professor 1971-1995, Pritzker-prisen 1997
   (einaste nordmann), legendarisk lærar og gjesteførelesar. *(NBL, Pritzker)*
-- **Knut Knutsen** — knytt til skulens etos; motto «Søk det enkle, det
+- **Knut Knutsen**, knytt til skulens etos; motto «Søk det enkle, det
   naturlege». *(arkitektur.no)*
-- **Karl Otto Ellefsen** — tidlegare rektor. *(arkitektur.no)*
-- **Ole Gustavsen** — rektor på 75-årsjubileet (2021). *(arkitektur.no)*
+- **Karl Otto Ellefsen**, tidlegare rektor. *(arkitektur.no)*
+- **Ole Gustavsen**, rektor på 75-årsjubileet (2021). *(arkitektur.no)*
 - Andre nemnde i jubileumsstoff: Thomas Thiis-Evensen (professor), Knut
   Hjeltnes (lærar i 28 år, slutta 2016), Marianne Skjulhaug, Erik Langdalen.
 
@@ -56,12 +56,12 @@ Punkt som **ikkje** er løfta til eigne hendingar enno, er merka «kandidat».
 > hendingar. Spriket mellom kjelder på rektorår (t.d. for Fehn) gjorde at berre
 > professortida hans er brukt.
 
-## 3. Bygget — Maridalsveien 29
+## 3. Bygget, Maridalsveien 29
 
 - Ferdig **1938** som verkstad og lager for **Oslo Lysverker**, teikna av Oslos
   byarkitekt. Fasaden har **vernestatus**.
 - Open konkurranse **1998**, 1. premie til **Jarmund/Vigsnæs AS**. Prosjektering
-  1998–2000, ferdig 2000–2001. Areal **~10 900 m²**.
+  1998-2000, ferdig 2000-2001. Areal **~10 900 m²**.
 - Del av ei større satsing på kunstutdanning langs Akerselva. *(SNL, arkitektur.no, Statsbygg)*
 
 ## 4. Skulen i dag (kandidatstoff til «2025» / kolofon)
@@ -83,6 +83,6 @@ Punkt som **ikkje** er løfta til eigne hendingar enno, er merka «kandidat».
   [Sverre Fehn](https://nbl.snl.no/Sverre_Fehn)
 - Wikipedia: [nn](https://nn.wikipedia.org/wiki/Arkitektur-_og_designh%C3%B8gskolen_i_Oslo) ·
   [en](https://en.wikipedia.org/wiki/Oslo_School_of_Architecture_and_Design)
-- [aho.no — AHO si historie](https://www.aho.no/om/aho-sin-historie/)
-- [arkitektur.no — «En velfødd 75-åring?»](https://www.arkitektur.no/aktuelt/utdanning/en-velfoedd-75-aaring/)
-- [The Pritzker Architecture Prize, 1997 — Sverre Fehn](https://www.pritzkerprize.com/laureates/1997)
+- [aho.no, AHO si historie](https://www.aho.no/om/aho-sin-historie/)
+- [arkitektur.no, «En velfødd 75-åring?»](https://www.arkitektur.no/aktuelt/utdanning/en-velfoedd-75-aaring/)
+- [The Pritzker Architecture Prize, 1997, Sverre Fehn](https://www.pritzkerprize.com/laureates/1997)

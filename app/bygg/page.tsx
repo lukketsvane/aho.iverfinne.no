@@ -6,7 +6,7 @@ import { ArchiveImage } from '@/components/ArchivePhoto';
 import { Eyebrow } from '@/components/ui';
 
 export const metadata: Metadata = {
-  title: 'Bygg — AHO',
+  title: 'Bygg, AHO',
   description: 'Bygningane AHO har halde til i, frå Kunstindustriskulen til Maridalsveien 29.',
 };
 

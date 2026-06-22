@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Ved sida av jubileet — ei tidslinje for AHO',
+    name: 'Ved sida av jubileet, ei tidslinje for AHO',
     short_name: 'AHO 80',
     description:
       'AHO fyller 80 år. Ei scrollbar tidslinje frå Statens arkitektkurs (1945) til Arkitektur- og designhøgskolen i Oslo i dag.',

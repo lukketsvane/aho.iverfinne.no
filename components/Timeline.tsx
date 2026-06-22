@@ -6,7 +6,7 @@ import type { Milestone } from '@/lib/timeline';
 import { biletFor } from '@/lib/bilete';
 import { ArchivePhoto, ArchiveImage } from './ArchivePhoto';
 
-/* Sentral skinne, vekslande år/foto — overview som lenkjar til detaljsida. */
+/* Sentral skinne, vekslande år/foto, overview som lenkjar til detaljsida. */
 export function Timeline({ items }: { items: Milestone[] }) {
   return (
     <div className="relative mx-auto max-w-3xl px-4 pb-24 sm:px-8">
@@ -58,7 +58,7 @@ export function Timeline({ items }: { items: Milestone[] }) {
               >
                 <span className={`h-2 w-2 rounded-full ${m.accent ? 'bg-aho' : 'bg-transparent'}`} />
               </span>
-              <Link href={`/${m.id}`} className="grid grid-cols-2 items-center gap-x-2 sm:gap-x-6" aria-label={`${m.year} — ${m.title}`}>
+              <Link href={`/${m.id}`} className="grid grid-cols-2 items-center gap-x-2 sm:gap-x-6" aria-label={`${m.year}, ${m.title}`}>
                 {yearLeft ? (
                   <>
                     {Year}

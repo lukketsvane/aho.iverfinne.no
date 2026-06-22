@@ -7,7 +7,7 @@ import { ArchiveImage } from '@/components/ArchivePhoto';
 import { Logo } from '@/components/ui';
 
 const KORT = [
-  { n: '01', href: '/tidslinje', title: 'Tidslinje', blurb: 'Utforsk dei viktige milepælane i AHO si historie, 1945–2025.' },
+  { n: '01', href: '/tidslinje', title: 'Tidslinje', blurb: 'Utforsk dei viktige milepælane i AHO si historie, 1945-2025.' },
   { n: '02', href: '/bygg', title: 'Bygg', blurb: 'Frå Kunstindustriskulen til Maridalsveien 29 ved Akerselva.' },
   { n: '03', href: '/kart', title: 'Kart', blurb: 'Stadene AHO har halde til, frå St. Olavs gate til i dag.' },
 ];
