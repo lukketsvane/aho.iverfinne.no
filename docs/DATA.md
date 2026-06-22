@@ -11,19 +11,25 @@ Hendingane i [`lib/timeline.ts`](../lib/timeline.ts) er kryssjekka mot:
 
 | År | Hending |
 |----|---------|
-| 1945 | Statens arkitektkurs — krisekurset ved Kunstindustriskulen (SHKS) |
+| 1945 | Statens arkitektkurs — krisekurset ved Kunstindustriskulen (SHKS); 189 arkitektar utdanna |
 | 1961 | Sjølvstendig vitskapleg høgskule: Statens Arkitektskole i Oslo |
+| 1966 | Christian Norberg-Schulz professor (til 1992) — teori og internasjonal tyngd |
 | 1968 | Flytting til eige hus i St. Olavs gate |
 | 1969 | Namnet Arkitekthøgskolen i Oslo (AHO) |
 | 1979 | Industridesign som toårig etterutdanning (designsporet) |
 | 1983 | Industridesign på fulltid |
 | 1996 | Institutt for industridesign innlemma |
-| 2001 | Flytting til Maridalsveien 29 (ombygd av Jarmund/Vigsnæs) |
+| 1997 | Sverre Fehn (professor 1971–95) får Pritzker-prisen |
+| 2001 | Flytting til Maridalsveien 29 (1938-bygg for Oslo Lysverker, ombygd av Jarmund/Vigsnæs) |
+| 2004 | Master i landskapsarkitektur |
 | 2005 | Arkitektur- og designhøgskolen i Oslo |
+| 2009 | Institutt for industridesign → Institutt for design |
 | 2025 | 80-årsjubileum |
 
 > Merk: AI-utkastet til mockup hadde nokre feil årstal (t.d. «1968 Tøyen»,
 > «1956 statleg høgskule»). Tidslinja her brukar dei verifiserte årstala.
+> Fullt skrapa kjeldemateriale — inkludert kandidatstoff og sprik mellom
+> kjelder — ligg i [`RESEARCH.md`](RESEARCH.md).
 
 ## 2. Bilete — Notion-databasen `aho_bilete`
 
