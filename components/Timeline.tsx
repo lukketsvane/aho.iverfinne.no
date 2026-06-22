@@ -3,7 +3,8 @@
 import { motion } from 'motion/react';
 import { ArrowUpRight } from 'lucide-react';
 import type { Milestone } from '@/lib/timeline';
-import { ArchivePhoto } from './ArchivePhoto';
+import { biletFor, biletCredit } from '@/lib/bilete';
+import { ArchivePhoto, ArchiveImage } from './ArchivePhoto';
 import { Eyebrow, SourceTag } from './ui';
 
 export function Timeline({ items }: { items: Milestone[] }) {
@@ -11,7 +12,9 @@ export function Timeline({ items }: { items: Milestone[] }) {
     <ol className="relative mx-auto mt-10 max-w-[560px] px-5 pb-24">
       {/* gjennomgåande skinne */}
       <div className="absolute bottom-6 left-[1.65rem] top-3 w-px bg-line sm:left-[1.9rem]" aria-hidden />
-      {items.map((m, i) => (
+      {items.map((m) => {
+        const foto = biletFor(m.id);
+        return (
         <motion.li
           key={m.id}
           initial={{ opacity: 0, y: 22 }}
@@ -46,15 +49,38 @@ export function Timeline({ items }: { items: Milestone[] }) {
             {m.lead}
           </p>
 
-          <ArchivePhoto
-            motif={m.motif}
-            className="mt-5 aspect-[16/10] w-full"
-            caption={m.sources.find((s) => s.credit)?.credit ?? m.place}
-          />
+          {foto ? (
+            <a href={foto.kjeldeside} target="_blank" rel="noopener noreferrer" className="mt-5 block">
+              <ArchiveImage
+                src={foto.media_url}
+                alt={foto.alt}
+                credit={biletCredit(foto)}
+                className="aspect-[16/10] w-full"
+              />
+            </a>
+          ) : (
+            <ArchivePhoto
+              motif={m.motif}
+              className="mt-5 aspect-[16/10] w-full"
+              caption={m.sources.find((s) => s.credit)?.credit ?? m.place}
+            />
+          )}
 
           <p className="mt-4 max-w-prose text-[0.92rem] leading-relaxed text-ink-soft">{m.body}</p>
 
           <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2">
+            {foto && (
+              <a
+                href={foto.kjeldeside}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 font-mono text-[10px] uppercase tracking-wider text-muted transition-colors hover:text-aho"
+              >
+                [Foto: {foto.kreditering.split(' / ')[0]}]
+                <ArrowUpRight className="h-3 w-3 text-aho" />
+                <span className="text-muted/70">· {foto.lisens}</span>
+              </a>
+            )}
             {m.sources.map((s, k) => (
               <span key={k} className="inline-flex items-center gap-1.5">
                 {s.url ? (
@@ -77,7 +103,8 @@ export function Timeline({ items }: { items: Milestone[] }) {
             ))}
           </div>
         </motion.li>
-      ))}
+        );
+      })}
     </ol>
   );
 }
