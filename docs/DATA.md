@@ -40,6 +40,27 @@ Tre hovudgrep:
 
 Skjemaet er spegla i TypeScript i [`lib/aho-bilete.ts`](../lib/aho-bilete.ts).
 
+Databasen er bygd i Notion som **«AHO bilete»** med norske eigenskapsnamn og fleire
+visingar (*Alle*, *Etter rettsstatus*, *Klare til bruk*, *Treng handling*, *Galleri*,
+*Etter seksjon*). `lib/notion.ts` mappar dei faktiske namna:
+
+| Notion-eigenskap | Kodefelt | | Notion-eigenskap | Kodefelt |
+|---|---|---|---|---|
+| Tittel | `tittel` | | Mediefil-URL | `media_url` |
+| Slug | `slug` | | Kjeldeside | `kjeldeside` |
+| Rettsstatus | `rights_status` | | Kreditering | `kreditering` |
+| Sortering | `sort_order` | | Credit line *(formel)* | `credit_line` |
+| Årstal | `year` | | Hotlink-status | `hotlink_status` |
+| Seksjon | `seksjon` | | Breidd / Høgd | `breidd` / `høgd` |
+| Prioritet | `prioritet` | | Orientering *(formel)* | `orientering` |
+| Lisens | `lisens` | | Bruksklar *(formel)* | `bruksklar` |
+| Attribusjon kravd | `attribusjon_kravd` | | Alt-tekst / Bildetekst | `alt_tekst` / `bildetekst` |
+| Del likt | `del_likt` | | Ansvarleg / Frist | `ansvarleg` / `frist` |
+| Kommersiell OK | `kommersiell_ok` | | Sensitivitet / Merknad | `sensitivitet` / `merknad` |
+
+Merk: select-verdiane brukar **mellomrom** (t.d. `må bestillast`, `rettar uavklart`),
+ikkje understrek. `Seksjon` har i tillegg `brand`, `identitet` og `prosjekt`.
+
 ### Rettsstatus → publisering
 
 ```
@@ -71,11 +92,14 @@ import { fetchPubliserbareBilete } from '@/lib/notion';
 const bilete = await fetchPubliserbareBilete(); // berre rights_status = klar
 ```
 
-Set i `.env.local` (sjå `.env.example`):
+Det er **to** databasar: «AHO heile historia» (tidslinje/hendingar, `DATABASE_ID`)
+og «AHO bilete» (foto + rettar, `NOTION_BILETE_DB_ID`). Set i `.env.local`
+(sjå `.env.example`):
 
 ```
 NOTION_API_KEY=secret_...
-DATABASE_ID=...
+DATABASE_ID=...              # AHO heile historia (hendingar)
+NOTION_BILETE_DB_ID=...      # AHO bilete (foto/rettar)
 ```
 
 Kobl deretter `media_url` / `fil` inn i `ArchivePhoto`-komponenten i staden for
